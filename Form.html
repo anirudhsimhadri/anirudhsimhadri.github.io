@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <!--<script src="FinalBDPA.py">-->
+    <script type="text/javascript">
+    function validate()
+    {
+
+
+      var text = document.getElementById("Name").value;
+
+    var regx = /^$/;
+      if(regx.test(text)) {
+
+        document.getElementById("1b1text").innerHTML="Valid";
+        document.getElementById("1b1text").style.visibility="visible";
+        document.getElementById("1b1text").style.color="green";
+      }
+      else {
+        document.getElementById("1b1text").innerHTML="Invalid";
+        document.getElementById("1b1text").style.visibility="visible";
+        document.getElementById("1b1text").style.color="red";
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="error"></div>
+    <form name="form" action='ChooseFinalBDPA.html' target="_blank"; method="POST">
+      <div style='color:greenyellow'; font-size: large><u>
+        If you want more information, please submit your information below.
+      </u></div>
+      <div style='color:greenyellow'>
+        <lable for="name">Name Validation</lable>            
+        <input name="name" type="text"; placeholder="Type Name">
+      </div>
+      <div style='color:greenyellow'>
+        <lable for="age">Age</lable>            
+        <input name="age" type="text"; placeholder="Type Age">
+      </div>
+      <div style='color:greenyellow'>
+        <lable for="email">Enter Email Below</lable>            
+        <input name="email" type="text"; placeholder="Type Email">
+      </div>
+      <div style="color:greenyellow">
+        <label for="occupation">Enter your Occupation</label>
+        <input name="occupation" type="text"; placeholder="Type Occupation">
+      </div>
+    </br>
+      <button type="submit">Submit</button>
+</body>
+</html>
